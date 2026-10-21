@@ -2,7 +2,8 @@
     width: 100%;
     z-index: 100;
     background-color: #ffff;
-    max-width: 70%;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in-out;
 }
 
 .fixed{
@@ -16,4 +17,49 @@
 
 .background{
     background-color: #ffff;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 14px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.logo{
+    font-weight: bold;
+    color: #121212;
+    font-size: 30px;
+    display: none;
+}
+
+.nav{
+    display: flex;
+    gap: 15px;
+
+    a{
+        font-wheight: medium;
+        color: #121212;
+        display: flex;
+        align-items: center;
+        padding: 8px 14px;
+        transition: transform 0.7s;
+        
+        &:hover{
+            font-weight: bold;
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media (min-width: 640px){
+    .logo{
+        display: flex;
+    }
 }

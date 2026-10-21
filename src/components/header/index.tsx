@@ -30,7 +30,7 @@ export function Header(){
                             DevMotors
                         </Link>
                     </div>
-                    <nav>
+                    <nav className={styles.nav}>
                         <Link href="/">HOME</Link>
                         <Link href="/#servicos">SERVIÇOS</Link>
                         <Link href="/#contatos">CONTATO</Link>
