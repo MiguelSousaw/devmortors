@@ -8,8 +8,8 @@ export interface HomeProps{
             };
             heading: string,
             cta_button: {
-                title: string,
-                url: string,
+                title: string;
+                url: string;
             };
             about: {
                 description: string,
