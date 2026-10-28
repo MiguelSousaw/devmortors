@@ -19,7 +19,10 @@ export default async function Home() {
           bannerUrl={object.metadata.banner.url}
           icon={<Phone size={16} color='#ffff'/>}
         />
-       <Container children={<Services/>}/>
+
+       <Container>
+          <Services object={object}/>
+       </Container>
       </main>
   );
 }
